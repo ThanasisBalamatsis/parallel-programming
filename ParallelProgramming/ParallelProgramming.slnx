@@ -1,1 +1,3 @@
-<Solution />
+<Solution>
+  <Project Path="TaskWhenAll/TaskWhenAll.csproj" />
+</Solution>
