@@ -25,7 +25,8 @@ var derbyOfTyneside = new Match(
     "Sunderland",
     TimeSpan.FromSeconds(3));
 
-var cancellationTokenSource = new CancellationTokenSource(TimeSpan.FromSeconds(30));
+using var cancellationTokenSource = 
+    new CancellationTokenSource(TimeSpan.FromSeconds(30));
 
 Console.WriteLine("Matches will start soon...");
 
