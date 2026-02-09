@@ -32,9 +32,7 @@ Console.WriteLine("Matches will start soon...");
 
 var stopwatch = Stopwatch.StartNew();
 
-try
-{
-    List<Task<string>> simulationTasks =
+List<Task<string>> simulationTasks =
     [
         derbyOfManchester.SimulateResult(cancellationTokenSource.Token),
         derbyOfLondon.SimulateResult(cancellationTokenSource.Token),
@@ -42,6 +40,8 @@ try
         derbyOfTyneside.SimulateResult(cancellationTokenSource.Token)
     ];
 
+try
+{
     var results = await Task.WhenAll(simulationTasks);
     // .WaitAsync(cancellationTokenSource.Token); <= when added after Task.WhenAll(),
     // it would cancel the waiting for all tasks,
