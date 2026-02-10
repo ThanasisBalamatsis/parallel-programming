@@ -36,6 +36,8 @@ try
         Console.WriteLine(message);
     }
 
+    stopwatch.Stop();
+
     Console.WriteLine($"Simulation ended. Total simulation duration {stopwatch.ElapsedMilliseconds}ms");
 }
 catch (TaskCanceledException)
