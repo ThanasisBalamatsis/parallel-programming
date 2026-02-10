@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="TaskWhenAll/TaskWhenAll.csproj" />
   <Project Path="TaskWhenAny/TaskWhenAny.csproj" Id="46afa987-3349-41d6-84a1-50afbca968c6" />
+  <Project Path="TaskWhenEach/TaskWhenEach.csproj" Id="7e067ca1-7f87-44d5-84c4-a19d7f870f21" />
 </Solution>
